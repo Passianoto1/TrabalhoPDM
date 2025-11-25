@@ -1,0 +1,40 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#camera {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #000;
+}
+
+#camera--view,
+#camera--sensor,
+#camera--output {
+  width: 100%;
+  height: auto;
+}
+
+#camera--trigger {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  position: absolute;
+  bottom: 30px;
+  left: calc(50% - 40px);
+}
+.taken {
+  width: 100% !important;
+  height: auto !important;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin-top: 20px;
+  z-index: 2;
+}
