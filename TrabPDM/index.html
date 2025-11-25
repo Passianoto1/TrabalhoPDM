@@ -1,34 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camera PWA</title>
+    <title>PWA - Camera</title>
+    <link rel="stylesheet" href="/css/style.css">
 
-    <link rel="manifest" href="./manifest.json">
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="apple-touch-icon" href="images/icons/icon-128x128.png">
-    <link rel="apple-touch-icon" href="images/icons/icon-256x256.png">
-    <link rel="apple-touch-icon" href="images/icons/icon-512x612.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/images/camera_256.png" sizes="256x256">
+    <meta name="theme-color" content="white">
 </head>
+
 <body>
 
+    <!-- Camera -->
     <main id="camera">
- 
-        <div id="camera-stream"></div>
+        <!-- camera sensor (lente) -->
+        <canvas id="camera--sensor"></canvas>
 
+        <!-- Camera view (visualização) -->
         <video id="camera--view" autoplay playsinline></video>
 
-      
-        <canvas id="camera--sensor"></canvas>
-        <img id="camera--output">
+        <!-- Camera output -->
+        <img src="//:0" alt="" id="camera--output">
 
-    
-        <button id="camera--trigger">Take Photo</button>
+        <!-- Camera botão de tirar foto -->
+        <button id="camera--trigger">tirar foto</button>
     </main>
 
-    <script src="main.js" type="module"></script>
+    <script src="/TrabPDM/js/main.js" type="module"></script>
 </body>
+
 </html>
